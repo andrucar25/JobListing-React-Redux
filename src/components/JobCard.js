@@ -54,7 +54,7 @@ const JobCard = () => {
 
     return ( 
         <>
-         <div className="grid p-16 justify-center items-center text-gray-900">
+         <div className="flex flex-col py-16 justify-center items-center text-gray-900 ">
             { jobs.map( job => 
                 <Card
                 key={job.id}

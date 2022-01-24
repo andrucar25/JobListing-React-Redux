@@ -20,8 +20,8 @@ const FilterCard = () => {
     return (  
         <>
          {filters.length >= 1 ? (
-            <div className="relative flex justify-center items-center h-10 w-full">
-            <div className=" bg-white p-5 flex flex-1 justify-start items-center w-7/12 max-w-4xl h-20 rounded-md shadow-lg">
+            <div className="relative flex  justify-center items-center h-10  lg:w-full">
+            <div className=" bg-white gap-x-3 gap-y-2 p-5 flex flex-1 flex-wrap  justify-start items-center w-full lg:w-7/12 max-w-4xl h-28 lg:h-20 rounded-md shadow-lg">
                 { filters.map(filter => 
                     <FilterItem 
                     item={filter} 
@@ -29,7 +29,7 @@ const FilterCard = () => {
                     />
                 )}
 
-                    <p className="px-2 m-2 clear_style hover:underline cursor-pointer" onClick={clearJobsFilter}>Clear</p>
+                    <p className="lg:px-2 lg:m-2 clear_style hover:underline cursor-pointer" onClick={clearJobsFilter}>Clear</p>
             
             </div>       
             
